@@ -1,0 +1,153 @@
+*
+{
+    margin:0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../books-bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    margin-left: 220px; /* Adjust for sidebar */
+}
+
+.container {
+    max-width: 50%;
+    margin: auto;
+    background: rgb(174, 166, 166);
+    padding: 20px;
+    border-radius: 5px;
+    /*box-shadow: 0 0 10px rgba(240, 7, 7, 0.914);*/
+    margin-top: 200px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+h1, h2 {
+    color: #0f0c0c;
+    margin-bottom: 6px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1cba3e;
+}
+.books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.actions button {
+    margin-right: 5px;
+}
+
+.title{
+    width: 54px;
+}
+.Wh1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: rgb(243, 11, 11);
+    margin-top: 50px;
+}
+.center {
+    max-width: 50%;
+    margin:auto;
+    background: rgb(63, 52, 52);
+    padding: 20px;
+    border-radius: 5px;
+   /* box-shadow: 0 0 10px rgb(253, 19, 19);*/
+    margin-top: 190px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #e5e3d8;
+    text-align: center;
+}
+
+h5 {
+    font-size: 18px;
+    color: #FFD700;
+}
+/* Left Sidebar Navigation */
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Sidebar width */
+    height: 100vh; /* Full height */
+    background-color: #5a584a; /* Blue background */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.sticky-nav a:hover {
+    background-color: #57b300;
+}
+
+/* Adjust main content to avoid being hidden by the sidebar */
+body {
+    margin-left: 220px; /* Space for sidebar */
+}
